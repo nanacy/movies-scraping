@@ -62,7 +62,7 @@ $ cd movie-searcher-app
 ```
 $ subl .env
 ```
-**Write :**  
+**Write in the .env:**  
 {
 TMDB_KEY = "YOUR_OWN_API_KEY"
 }  

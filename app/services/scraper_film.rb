@@ -1,6 +1,5 @@
 require 'dotenv'
 Dotenv.load
-# "#{baseURL}550#{finURL}"
 
 class ScraperFilm
 	attr_accessor :api
@@ -9,6 +8,10 @@ class ScraperFilm
 		@api = ENV["TMDB_KEY"]
 		#CONNEXION
 		Tmdb::Api.key(@api)
+	end
+
+	def test
+		spiderman = Tmdb::Job.list
 	end
 
 	#fonction qui recoit en paramètre : nom du film

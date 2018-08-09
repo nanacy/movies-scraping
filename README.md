@@ -45,7 +45,7 @@ API
 
 Take the API Key  
 
-**Add the key to the application**
+**Add the key to the application**  
 Clone the Heroku repository
 ```
 $ heroku git:clone -a movie-searcher-app

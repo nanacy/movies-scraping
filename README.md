@@ -46,7 +46,7 @@ Add your own api_key
 **Create your account to have some :**
 https://www.themoviedb.org/account/signup
 
-**To obtain the api_key :**  
+**To obtain the api_key on the site:**  
 SETTING  
 API
 

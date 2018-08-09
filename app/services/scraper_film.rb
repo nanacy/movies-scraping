@@ -3,15 +3,10 @@ Dotenv.load
 # "#{baseURL}550#{finURL}"
 
 class ScraperFilm
-	attr_accessor :api, :baseURL, :finURL
+	attr_accessor :api
 
 	def initialize
 		@api = ENV["TMDB_KEY"]
-		@baseURL = "https://api.themoviedb.org/3/movie/"
-		#inserer id
-		@finURL = "?api_key=".concat(@api)
-		# https://api.themoviedb.org/3/movie/550?api_key=c4dfdf80f2721ec0a4dc18b3d8fa9b00
-		
 		#CONNEXION
 		Tmdb::Api.key(@api)
 	end
@@ -21,7 +16,8 @@ class ScraperFilm
 	def search_id(nom_film)
 		batman = Tmdb::Movie.find(nom_film)
 		liste_id = []
-		print "Nombre de film : #{batman.length} \n\n"
+		puts "Nombre de film : #{batman.length}"
+		puts "-"*20
 		batman.each_with_index do |film, i|
 			liste_id << film.id
 			if i>=20
@@ -43,7 +39,6 @@ class ScraperFilm
 			title = movie["original_title"]
 			release = movie["release_date"]
 			image = movie["poster_path"]
-			
 			# puts movie_cast = Tmdb::Movie.casts(id)
 			# director = movie_cast[]
 			
@@ -53,11 +48,13 @@ class ScraperFilm
 		return liste_info
 	end
 
-	#fonction qui lance la recherche des infos
+	#fonction qui prend en paramètre : un titre de film
+	#qui lance les fonctions de recherche
 	#et met dans un array : title/release_date/image/director
-	def perform
-		liste_id = search_id("batman")
+	def perform(titre)
+		liste_id = search_id(titre)
 		liste_info = search_info(liste_id)
+		return liste_info
 	end
 end
 

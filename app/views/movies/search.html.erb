@@ -4,8 +4,17 @@
 	<title></title>
 </head>
 <body>
-	<h1>Search film</h1>
-	<p>Afficher resultat de la recherche</p>
+	<div class="jumbotron">
+		<h1>RESULTS</h1>
+		<% @movie.reverse.each_with_index do |mov, i| %>
+			<%= i+1 %> : <%= mov.title %><br>
+			<%= mov.release %><br>
+			<%= mov.image %><br><br><br>
+		<% end %>
+	</div>
 
+	<div class="jumbotron">
+		<%= link_to "ACCUEIL", "/", class: "btn btn-lg btn-warning" %>
+	</div>
 </body>
 </html>

@@ -58,7 +58,7 @@ Clone the Heroku repository
 $ heroku git:clone -a movie-searcher-app
 $ cd movie-searcher-app
 ```
-Add your key in .env
+**Add your key in .env**
 ```
 $ subl .env
 ```
@@ -67,7 +67,7 @@ $ subl .env
 TMDB_KEY = "YOUR_OWN_API_KEY"
 }  
 
-Add and save your changes
+**Add and save your changes**
 ```
 $ git add .
 $ git commit -am "make it better"

@@ -33,6 +33,36 @@ $ rails server
 localhost:3000
 ```
 
+## Installation on computer
+
+Add your own api_key
+**Create your account to have some :**
+https://www.themoviedb.org/account/signup
+
+**To obtain the api_key :**
+SETTING
+API
+
+Take the API Key
+
+**Add the key to the application**
+Clone the Heroku repository
+```
+$ heroku git:clone -a movie-searcher-app
+$ cd movie-searcher-app
+```
+Add your key in .env
+```
+$ subl .env
+```
+Add and save your changes
+```
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+```
+
+
 ## Display the database
 
 * Open the file **development.sqlite3** (in the db file) with **DB Browser for SQLite**

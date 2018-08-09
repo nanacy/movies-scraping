@@ -33,6 +33,13 @@ $ rails server
 localhost:3000
 ```
 
+## Display the database
+
+* Open the file **development.sqlite3** (in the db file) with **DB Browser for SQLite**
+* Do not forget to actualize and enjoy
+
+
+
 ## Make the application work on Heroku
 
 Add your own api_key  
@@ -61,12 +68,6 @@ $ git add .
 $ git commit -am "make it better"
 $ git push heroku master
 ```
-
-
-## Display the database
-
-* Open the file **development.sqlite3** (in the db file) with **DB Browser for SQLite**
-* Do not forget to actualize and enjoy
 
 --------------------------------------
 

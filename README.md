@@ -33,17 +33,17 @@ $ rails server
 localhost:3000
 ```
 
-## Installation on computer
+## Make the application work on Heroku
 
-Add your own api_key
+Add your own api_key  
 **Create your account to have some :**
 https://www.themoviedb.org/account/signup
 
-**To obtain the api_key :**
-SETTING
+**To obtain the api_key :**  
+SETTING  
 API
 
-Take the API Key
+Take the API Key  
 
 **Add the key to the application**
 Clone the Heroku repository

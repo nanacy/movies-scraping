@@ -70,5 +70,3 @@ $ git push heroku master
 
 --------------------------------------
 
-MADE BY :
-* Nancy CASSAND

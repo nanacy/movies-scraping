@@ -62,6 +62,11 @@ Add your key in .env
 ```
 $ subl .env
 ```
+**Write :**
+{
+TMDB_KEY = "YOUR_OWN_API_KEY"
+}  
+
 Add and save your changes
 ```
 $ git add .

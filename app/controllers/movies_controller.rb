@@ -11,6 +11,8 @@ class MoviesController < ApplicationController
   	if params["title"]!=""
   		title = params["title"]
 
+      Movie.delete_all
+
       liste = ScraperFilm.new.perform(title)
       liste.each do |movie|
         new_movie = Movie.create(title: movie["title"], release: movie["release"], image: movie["image"])

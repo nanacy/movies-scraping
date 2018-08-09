@@ -7,9 +7,10 @@
 	<div class="jumbotron">
 		<h1>RESULTS</h1>
 		<% @movie.reverse.each_with_index do |mov, i| %>
-			<%= i+1 %> : <%= mov.title %><br>
-			<%= mov.release %><br>
-			<%= mov.image %><br><br><br>
+			<%= i+1 %> : <br>
+			Titre : <%= mov.title %><br>
+			Date de sortie : <%= mov.release %><br>
+			Image : <%= mov.image %><br><br><br>
 		<% end %>
 	</div>
 

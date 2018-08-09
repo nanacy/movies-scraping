@@ -62,7 +62,7 @@ Add your key in .env
 ```
 $ subl .env
 ```
-**Write :**
+**Write :**  
 {
 TMDB_KEY = "YOUR_OWN_API_KEY"
 }  
